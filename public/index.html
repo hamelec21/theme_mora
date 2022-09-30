@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/tailwind.css">
+</head>
+ <body class="bg-white"> 
+
+    <div class="mx-auto py-4">
+        <div class="flex items-center justify-between">
+          <div class="flex m-8 space-x-4">
+            <a href="#"><p class="text-sky-600  hover:text-red-600">Autos</p></a>
+           <a href="#"><p class="text-sky-600  hover:text-red-600">Ramates</p></a> 
+           <a href="#"><p class="text-sky-600  hover:text-red-600">Legal Firmas</p></a> 
+          </div>
+      
+          <img src="https://moracalderon.cl/img/logo/logo_header.png" class="w-48" />
+          <div class="flex m-8">
+           <a> <p class="text-gray-800  hover:text-gray-900">¡Hola Ingresa Aquí!</p></a>
+          </div>
+        </div>
+      </div>
+
+
+    <nav class="bg-sky-700 mx-auto h-14">
+
+        <div class="max-w-6xl  mx-auto">
+            <div class="text-center"> <!-- justify-between-->
+                <div class="">
+                    <!-- menu princinpal -->
+                    <div class="items-center hidden space-x-1 md:flex  justify-center">
+                    
+                        <div class="items-center hidden space-x-1 md:flex  justify-center">
+
+                            <a href="/quienes-somos"
+                           class=" px-4 py-4  font-bold text-white hover:text-red-600 hover:bg-white">Home
+                        </a>
+
+                        <a href="/quienes-somos"
+                        class="px-4 py-4 font-bold text-white hover:text-red-600 hover:bg-white">Nosotros
+                        </a>
+
+                        <a href="/quienes-somos"
+                        class="px-4 py-4 font-bold text-white hover:text-red-600 hover:bg-white">Servicios
+                        </a>
+
+
+                        <a href="/quienes-somos"
+                        class="px-4 py-4 font-bold text-white hover:text-red-600 hover:bg-white">Contactanos
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Boton menu Movil -->
+                <div class="flex items-center md:hidden">
+                    <button class="mobile-menu-button">
+                        <svg class="w-6 h-6 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                             stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu md:hidden px-5 ">
+            <ul>
+                <li>
+                    <a href="/"
+                       class="px-3 py-2 font-bold text-white bg-red-600 rounded-md hover:bg-blue-700">
+                        Home
+                    </a>
+                </li>
+                <br>
+                <li>
+                    <a href="/quienes-somos"
+                       class="px-3 py-2 font-bold text-white bg-red-600 rounded-md hover:bg-blue-700">Quienes
+                        Somos
+                    </a>
+                </li>
+                <br>
+                <li>
+                    <a href="{{ route('contactanos.index') }}"
+                       class="px-3 py-2 font-bold text-white bg-red-600 rounded-md hover:bg-blue-700">Contacto
+                    </a>
+                </li>
+    
+            </ul>
+    
+        </div>
+        <br>
+    
+    </nav>
+
+
+    <!--banner-->
+
+<section>
+
+    <div class="shadow-lg">
+
+        <img src="img/banner.jpg">
+    </div>
+
+</section>
+
+
+
+<!--servicios de auto fact-->
+
+<div class="container mx-auto m-8 justify-center">
+
+    <div class="grid grid-cols-3 gap-4">
+
+        <div class=""> <img src="img/banner.jpg"></div>
+        <div class=""> <img src="img/banner.jpg"></div>
+        <div class=""> <img src="img/banner.jpg"></div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!--Filtros -->
+<section>
+
+    <div class="container mx-auto m-8">
+        <input type="text" id="" placeholder="¿Qué Estás Buscando?" class="border-sky-600 border rounded-lg py-2 w-full">
+    </div>
+
+    <div class="container mx-auto m-8 justify-center">
+
+        <div class="grid grid-cols-4 gap-4">
+
+            <div class="">
+                <select class="border-sky-600 border rounded-lg py-2 w-full">
+                    <option value="">Marca</option>
+                    <option value="">Audi</option>
+                    <option value="">Mazda</option>
+                    <option value="">Chery</option>
+                </select>
+            </div>
+
+            <div class="">
+                <select class="border-sky-600  border rounded-lg py-2 w-full">
+                    <option value="">Modelo</option>
+                    <option value="">A1</option>
+                    <option value="">A2</option>
+                    <option value="">A3</option>
+                </select>
+            </div>
+
+            <div class="">
+                <select class="border-sky-600 border rounded-lg py-2 w-full">
+                    <option value="">Año</option>
+                    <option value="">2023</option>
+                    <option value="">2022</option>
+                    <option value="">2021</option>
+                </select>
+            </div>
+
+
+            <div class="">
+                <select class="border-sky-600 border rounded-lg py-2 w-full">
+                    <option value="">Combustible</option>
+                    <option value="">Bencina</option>
+                    <option value="">Diesel</option>
+                    <option value="">Electrico</option>
+                </select>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!--Grid de Veiculos-->
+
+<section class=" container mx-auto m-8">
+
+    <div class="grid grid-cols-4  gap-6">
+
+        <!-- card -->
+        <div class="mx-auto flex w-96 flex-col justify-center bg-white rounded-2xl shadow-xl shadow-slate-300/60">
+                <!-- img -->
+                <img class="aspect-video w-96 rounded-t-2xl object-cover object-center" src="https://images.pexels.com/photos/3311574/pexels-photo-3311574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                <!-- text information -->
+                <div class="p-4">
+                    <h1 class="text-2xl font-medium text-slate-600 pb-2 text-left">Audi</h1>
+                    <h1 class="text-xl font-bold text-slate-600 pb-2 text-left">A1</h1>
+                    <h1 class="text-xl font-medium text-slate-600 pb-2 text-left">2023</h1>
+                    <h3 class="text-center text-red-600 font-bold text-lg">$4.000.000</h3>
+                </div>
+
+               
+              <a href="detalles.html"><div class="bg-sky-600  hover:bg-sky-500  hover:text-white  hover:font-bold rounded-bl-lg rounded-br-lg text-center text-white py-2">Ver Mas Detalles</div>
+              </a> 
+        </div>
+
+        <!-- card -->
+        <div class="mx-auto flex w-96 flex-col justify-center bg-white rounded-2xl shadow-xl shadow-slate-300/60">
+            <!-- img -->
+            <img class="aspect-video w-96 rounded-t-2xl object-cover object-center" src="https://images.pexels.com/photos/3311574/pexels-photo-3311574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+            <!-- text information -->
+            <div class="p-4">
+                <h1 class="text-2xl font-medium text-slate-600 pb-2 text-left">Audi</h1>
+                <h1 class="text-xl font-bold text-slate-600 pb-2 text-left">A1</h1>
+                <h1 class="text-xl font-medium text-slate-600 pb-2 text-left">2023</h1>
+                <h3 class="text-center text-red-600 font-bold text-lg">$4.000.000</h3>
+            </div>
+
+           
+          <a href="#"><div class="bg-sky-600  hover:bg-sky-500  hover:text-white  hover:font-bold rounded-bl-lg rounded-br-lg text-center text-white py-2">Ver Mas Detalles</div>
+          </a> 
+    </div>
+
+    <!-- card -->
+    <div class="mx-auto flex w-96 flex-col justify-center bg-white rounded-2xl shadow-xl shadow-slate-300/60">
+        <!-- img -->
+        <img class="aspect-video w-96 rounded-t-2xl object-cover object-center" src="https://images.pexels.com/photos/3311574/pexels-photo-3311574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+        <!-- text information -->
+        <div class="p-4">
+            <h1 class="text-2xl font-medium text-slate-600 pb-2 text-left">Audi</h1>
+            <h1 class="text-xl font-bold text-slate-600 pb-2 text-left">A1</h1>
+            <h1 class="text-xl font-medium text-slate-600 pb-2 text-left">2023</h1>
+            <h3 class="text-center text-red-600 font-bold text-lg">$4.000.000</h3>
+        </div>
+
+       
+      <a href="#"><div class="bg-sky-600  hover:bg-sky-500  hover:text-white  hover:font-bold rounded-bl-lg rounded-br-lg text-center text-white py-2">Ver Mas Detalles</div>
+      </a> 
+</div>
+
+<!-- card -->
+<div class="mx-auto flex w-96 flex-col justify-center bg-white rounded-2xl shadow-xl shadow-slate-300/60">
+    <!-- img -->
+    <img class="aspect-video w-96 rounded-t-2xl object-cover object-center" src="https://images.pexels.com/photos/3311574/pexels-photo-3311574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+    <!-- text information -->
+    <div class="p-4">
+        <h1 class="text-2xl font-medium text-slate-600 pb-2 text-left">Audi</h1>
+        <h1 class="text-xl font-bold text-slate-600 pb-2 text-left">A1</h1>
+        <h1 class="text-xl font-medium text-slate-600 pb-2 text-left">2023</h1>
+        <h3 class="text-center text-red-600 font-bold text-lg">$4.000.000</h3>
+    </div>
+
+   
+  <a href="#"><div class="bg-sky-600  hover:bg-sky-500  hover:text-white  hover:font-bold rounded-bl-lg rounded-br-lg text-center text-white py-2">Ver Mas Detalles</div>
+  </a> 
+</div>
+
+<!-- card -->
+<div class="mx-auto flex w-96 flex-col justify-center bg-white rounded-2xl shadow-xl shadow-slate-300/60">
+    <!-- img -->
+    <img class="aspect-video w-96 rounded-t-2xl object-cover object-center" src="https://images.pexels.com/photos/3311574/pexels-photo-3311574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+    <!-- text information -->
+    <div class="p-4">
+        <h1 class="text-2xl font-medium text-slate-600 pb-2 text-left">Audi</h1>
+        <h1 class="text-xl font-bold text-slate-600 pb-2 text-left">A1</h1>
+        <h1 class="text-xl font-medium text-slate-600 pb-2 text-left">2023</h1>
+        <h3 class="text-center text-red-600 font-bold text-lg">$4.000.000</h3>
+    </div>
+
+   
+  <a href="#"><div class="bg-sky-600  hover:bg-sky-500  hover:text-white  hover:font-bold rounded-bl-lg rounded-br-lg text-center text-white py-2">Ver Mas Detalles</div>
+  </a> 
+</div>
+
+<!-- card -->
+<div class="mx-auto flex w-96 flex-col justify-center bg-white rounded-2xl shadow-xl shadow-slate-300/60">
+    <!-- img -->
+    <img class="aspect-video w-96 rounded-t-2xl object-cover object-center" src="https://images.pexels.com/photos/3311574/pexels-photo-3311574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+    <!-- text information -->
+    <div class="p-4">
+        <h1 class="text-2xl font-medium text-slate-600 pb-2 text-left">Audi</h1>
+        <h1 class="text-xl font-bold text-slate-600 pb-2 text-left">A1</h1>
+        <h1 class="text-xl font-medium text-slate-600 pb-2 text-left">2023</h1>
+        <h3 class="text-center text-red-600 font-bold text-lg">$4.000.000</h3>
+    </div>
+
+   
+  <a href="#"><div class="bg-sky-600  hover:bg-sky-500  hover:text-white  hover:font-bold rounded-bl-lg rounded-br-lg text-center text-white py-2">Ver Mas Detalles</div>
+  </a> 
+</div>
+
+<!-- card -->
+<div class="mx-auto flex w-96 flex-col justify-center bg-white rounded-2xl shadow-xl shadow-slate-300/60">
+    <!-- img -->
+    <img class="aspect-video w-96 rounded-t-2xl object-cover object-center" src="https://images.pexels.com/photos/3311574/pexels-photo-3311574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+    <!-- text information -->
+    <div class="p-4">
+        <h1 class="text-2xl font-medium text-slate-600 pb-2 text-left">Audi</h1>
+        <h1 class="text-xl font-bold text-slate-600 pb-2 text-left">A1</h1>
+        <h1 class="text-xl font-medium text-slate-600 pb-2 text-left">2023</h1>
+        <h3 class="text-center text-red-600 font-bold text-lg">$4.000.000</h3>
+    </div>
+
+   
+  <a href="#"><div class="bg-sky-600  hover:bg-sky-500  hover:text-white  hover:font-bold rounded-bl-lg rounded-br-lg text-center text-white py-2">Ver Mas Detalles</div>
+  </a> 
+</div>
+
+<!-- card -->
+<div class="mx-auto flex w-96 flex-col justify-center bg-white rounded-2xl shadow-xl shadow-slate-300/60">
+    <!-- img -->
+    <img class="aspect-video w-96 rounded-t-2xl object-cover object-center" src="https://images.pexels.com/photos/3311574/pexels-photo-3311574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+    <!-- text information -->
+    <div class="p-4">
+        <h1 class="text-2xl font-medium text-slate-600 pb-2 text-left">Audi</h1>
+        <h1 class="text-xl font-bold text-slate-600 pb-2 text-left">A1</h1>
+        <h1 class="text-xl font-medium text-slate-600 pb-2 text-left">2023</h1>
+        <h3 class="text-center text-red-600 font-bold text-lg">$4.000.000</h3>
+    </div>
+
+   
+  <a href="#"><div class="bg-sky-600  hover:bg-sky-500  hover:text-white  hover:font-bold rounded-bl-lg rounded-br-lg text-center text-white py-2">Ver Mas Detalles</div>
+  </a> 
+</div>
+
+
+</section>
+
+<!--seccion informativa-->
+<div class="container mx-auto py-2 text-center mt-20">
+    <div class="m-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Gestion de Credito-->
+        <div class=" rounded overflow-hidden shadow-lg bg-sky-700">
+            <img class="w-48 mx-auto pt-4 pb-4" src="{{asset('img/banner/credito.png')}}" alt="">
+            <div class="px-6 py-4">
+                <div class="font-bold text-2xl mb-2 text-white text-center">Gestionamos Tu Credito</div>
+                <p class="text-white text-base text-justify">
+                    Te Ayudamos a gestionar tu crédito para la compra de tu Auto Cuenta con nuestra confianza.
+                </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+                <a href="{{ route('contactanos.index') }}">
+                    <button
+                        class="inline-block bg-boton-action  bg-amber-500 hover:bg-yellow-500 rounded-xl px-3 py-4 text-sm font-bold text-white mr-2 mb-2">
+                        Consulta Aquí
+                    </button>
+                </a>
+            </div>
+        </div>
+        <!-- Infome-->
+        <div class=" rounded overflow-hidden shadow-lg bg-sky-700">
+            <img class="w-48 mx-auto pt-4 pb-4" src="{{asset('img/banner/asesoria.png')}}" alt="">
+            <div class="px-6 py-4">
+                <div class="font-bold text-2xl mb-2 text-white text-center">Agente de Ventas</div>
+                <p class="text-white text-base text-justify">
+                    Comunicate con un agente de venta para resolver tus dudas al momento de realizar una compra
+                </p>
+            </div>
+            <div class="px-6 pt-4 ">
+                <a href="{{ route('contactanos.index') }}">
+                <button
+                    class="inline-block bg-boton-action  bg-amber-500 hover:bg-yellow-500 rounded-xl px-3 py-4 text-sm font-bold text-white mr-2 mb-2">
+                    Haz Click Ahora
+                </button>
+                </a>
+            </div>
+        </div>
+        <!-- Medio de pagos-->
+        <div class=" rounded overflow-hidden shadow-lg bg-sky-700">
+            <img class="w-48 mx-auto pt-4 pb-4" src="{{asset('img/banner/medio_pagos.png')}}" alt="">
+            <div class="px-6 py-4">
+                <div class="font-bold text-2xl mb-2 text-white text-center">Medios de Pagos</div>
+                <p class="text-white text-base text-justify">
+                    En Mora Calderon contamos con medios de pagos Electrónico para que tu compra sea Fácil y Segura en
+                    nuestra página web.
+                </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+                <a href="{{ route('contactanos.index') }}">
+                <button
+                    class="inline-block bg-boton-action  bg-amber-500 hover:bg-yellow-500 rounded-xl px-3 py-4 text-sm font-bold text-white mr-2 mb-2">
+                    Consultas Aquí
+                </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--Inicio Sección de Servicios autofact --->
+<div class="container mx-auto py-2 text-center">
+    <div class="m-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Transferencias-->
+        <div class=" rounded overflow-hidden shadow-lg bg-sky-700">
+            <img class="w-48 mx-auto pt-4 pb-4" src="img/logo-autofact-blanco.png"
+                 alt="Mora Calderon">
+            <div class="px-6 py-4">
+                <div class="font-bold text-2xl mb-2 text-white text-center">Transferencias 100% Digital</div>
+                <p class="text-white text-base text-justify">
+                    Transfiere el dominio de un vehículo en línea, sin hacer filas y con toda la seguridad y respaldo de
+                    Autofact.
+                </p>
+            </div>
+            <div class="px-6 pt-4 pb-2"><a
+                    href="  https://www.autofact.cl/transferencias?utm_source=ref_alianzas&utm_medium=banner _web&utm_campaign=TRF_MORA_CALDERON&utm_content=landing_page"
+                    target="_blank">
+                    <button
+                        class="inline-block bg-boton-action bg-amber-500 hover:bg-yellow-500 rounded-xl px-3 py-4 text-sm font-bold text-white mr-2 mb-2">
+                        Haz Click Ahora
+                    </button>
+                </a>
+            </div>
+        </div>
+        <!-- Informe full-->
+        <div class=" rounded overflow-hidden shadow-lg bg-sky-700">
+            <img class="w-48 mx-auto pt-4 pb-4" src="img/logo-autofact-blanco.png"
+                 alt="Mora Calderon">
+            <div class="px-6 py-4">
+                <div class="font-bold text-2xl mb-2 text-white text-center">Obtén Tu Informe Full</div>
+                <p class="text-white text-base text-justify">
+                    En minutos un completo informe del vehículo usado que quieres comprar con toda la seguridad y
+                    respaldo de Autofact.
+                </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+                <a href=" https://www.autofact.cl/informes?utm_source=ref_alianzas&utm_medium=banner _web&utm_campaign=INF_MORA_CALDERON&utm_content=landing_page" target="_blank">
+                    <button
+                        class="inline-block bg-boton-action  bg-amber-500 hover:bg-yellow-500 rounded-xl px-3 py-4 text-sm font-bold text-white mr-2 mb-2">
+                        Haz Click Ahora
+                    </button>
+                </a>
+            </div>
+        </div>
+        <!-- Tasación vehiculo-->
+        <div class=" rounded overflow-hidden shadow-lg bg-sky-700">
+            <img class="w-48 mx-auto pt-4 pb-4" src="img/logo-autofact-blanco.png"
+                 alt="Mora Calderon">
+            <div class="px-6 py-4">
+                <div class="font-bold text-2xl mb-2 text-white text-center">Obtén Tu Tasación del Vehiculo</div>
+                <p class="text-white text-base text-justify">
+                    Calculamos el valor comercial del vehículo y te entregamos un Informe de Precio para que puedas
+                    negociar con la mejor información.
+                </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+                <a href=" https://www.autofact.cl/precio-autos-usados?utm_source=ref_alianzas&utm_medium=banner _web&utm_campaign=PRC_MORA_CALDERON&utm_content=landing_page"
+                   target="_blank">
+                    <button
+                        class="inline-block bg-boton-action  bg-amber-500 hover:bg-yellow-500 rounded-xl px-3 py-4 text-sm font-bold text-white mr-2 mb-2">
+                        Haz Click Ahora
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<div class="bg-gray-900 h-48 text-gray-200 py-4 px-4">
+    <div class="container mx-auto py-2 text-center">
+        <div class="m-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <div class=""><img src="https://moracalderon.cl/img/logo/logo_header.png" class="w-48" /></div>
+            <div class="">Contacto</div>
+            <div class="">Direccion</div>  
+        </div>
+
+    </div>
+
+</div>
+
+<!--Inicio Script del Slider -->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        speed: 400,
+        spaceBetween: 100,
+        autoplay: {
+            delay: 3000,
+        },
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    });
+</script>
+<!--Fin Script del Slider -->
+
+<script>
+    // grab everything we need
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    // add event listeners
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+</script>
+    
+</body>
+</html>
